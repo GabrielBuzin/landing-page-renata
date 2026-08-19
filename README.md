@@ -1,6 +1,6 @@
-# Landing page — Dra. Renata Dal Piva Buzin
+# Landing page — Dra. Renata Dal PIva Buzin Lang
 
-Landing page responsiva para o consultório odontológico da Dra. Renata Dal Piva Buzin, em Chapecó (SC), com foco em contato e solicitação de agendamento pelo WhatsApp.
+Landing page responsiva para o consultório odontológico da Dra. Renata Dal PIva Buzin Lang, em Chapecó (SC), com foco em contato e solicitação de agendamento pelo WhatsApp.
 
 ## Tecnologias
 
