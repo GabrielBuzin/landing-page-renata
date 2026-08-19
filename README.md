@@ -18,6 +18,7 @@ Abra `index.html` diretamente no navegador ou utilize um servidor local, como o 
 - WhatsApp e mensagem inicial: constantes no topo de `js/script.js`.
 - Cores, fontes, largura e sombras: variáveis no topo de `css/style.css`.
 - Conteúdo e seções: `index.html`.
+- Tratamentos: cards interativos na seção `#atendimento`; abrem por cursor, teclado ou toque.
 - Fotografias futuras: pasta `assets/images`.
 - Logotipo e ícone do navegador: `assets/images/logo-consultorio.png`.
 

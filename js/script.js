@@ -49,3 +49,36 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 
 const yearElement = document.getElementById("current-year");
 if (yearElement) yearElement.textContent = new Date().getFullYear();
+
+const serviceCards = document.querySelectorAll(".service-card");
+
+function closeServiceCards(exceptCard = null) {
+  serviceCards.forEach((card) => {
+    if (card === exceptCard) return;
+    card.classList.remove("is-open");
+    card.setAttribute("aria-expanded", "false");
+    card.querySelector(".service-details")?.setAttribute("aria-hidden", "true");
+  });
+}
+
+function toggleServiceCard(card) {
+  const willOpen = !card.classList.contains("is-open");
+  closeServiceCards(card);
+  card.classList.toggle("is-open", willOpen);
+  card.setAttribute("aria-expanded", String(willOpen));
+  card.querySelector(".service-details")?.setAttribute("aria-hidden", String(!willOpen));
+}
+
+serviceCards.forEach((card) => {
+  card.addEventListener("click", () => toggleServiceCard(card));
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleServiceCard(card);
+    }
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".service-card")) closeServiceCards();
+});

@@ -80,15 +80,44 @@
     <section class="services section" id="atendimento" aria-labelledby="atendimento-title">
       <div class="container">
         <div class="section-heading reveal">
-          <div><p class="eyebrow">Cuidado odontológico</p><h2 id="atendimento-title">Atendimento clínico geral</h2></div>
-          <p>O atendimento começa com uma conversa e avaliação cuidadosa. As possibilidades de cuidado são apresentadas somente após análise profissional.</p>
+          <div><p class="eyebrow">Cuidado completo</p><h2 id="atendimento-title">Nossos tratamentos</h2></div>
+          <p>Passe o cursor sobre uma categoria ou toque no card para conhecer os procedimentos oferecidos.</p>
         </div>
-        <div class="service-grid">
-          <article class="service-card reveal"><span class="card-number">01</span><div class="line-icon" aria-hidden="true">◇</div><h3>Avaliação individual</h3><p>Um primeiro olhar atento para compreender suas necessidades e orientar os próximos passos.</p></article>
-          <article class="service-card reveal"><span class="card-number">02</span><div class="line-icon" aria-hidden="true">○</div><h3>Cuidados preventivos</h3><p>Orientações e acompanhamento voltados à manutenção da saúde bucal no dia a dia.</p></article>
-          <article class="service-card reveal"><span class="card-number">03</span><div class="line-icon" aria-hidden="true">✦</div><h3>Plano de cuidado</h3><p>Condutas definidas de forma personalizada, conforme a avaliação clínica de cada paciente.</p></article>
+        <div class="service-grid" aria-label="Categorias de tratamentos">
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-avaliacao">
+            <span class="card-number">01</span><div class="line-icon" aria-hidden="true">🦷</div><h3>Avaliação e Prevenção</h3>
+            <div class="service-details" id="tratamento-avaliacao" aria-hidden="true"><ul><li>Consulta odontológica</li><li>Avaliação clínica e planejamento</li><li>Limpeza e profilaxia</li><li>Aplicação de flúor</li><li>Orientação de higiene bucal</li><li>Avaliação periodontal</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-estetica">
+            <span class="card-number">02</span><div class="line-icon" aria-hidden="true">✨</div><h3>Estética Dental</h3>
+            <div class="service-details" id="tratamento-estetica" aria-hidden="true"><ul><li>Clareamento dental</li><li>Restaurações estéticas em resina</li><li>Facetas em resina e porcelana</li><li>Fechamento de diastemas</li><li>Recontorno estético dental</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-dentistica">
+            <span class="card-number">03</span><div class="line-icon" aria-hidden="true">🦷</div><h3>Dentística Restauradora</h3>
+            <div class="service-details" id="tratamento-dentistica" aria-hidden="true"><ul><li>Restaurações dentárias</li><li>Tratamento de cáries</li><li>Reconstrução de dentes fraturados</li><li>Substituição de restaurações antigas</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-periodontia">
+            <span class="card-number">04</span><div class="line-icon" aria-hidden="true">🌿</div><h3>Periodontia</h3>
+            <div class="service-details" id="tratamento-periodontia" aria-hidden="true"><ul><li>Tratamento de gengivite</li><li>Tratamento periodontal</li><li>Raspagem e profilaxia</li><li>Controle de placa bacteriana</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-reabilitacao">
+            <span class="card-number">05</span><div class="line-icon" aria-hidden="true">😁</div><h3>Reabilitação Oral</h3>
+            <div class="service-details" id="tratamento-reabilitacao" aria-hidden="true"><ul><li>Coroas dentárias</li><li>Próteses</li><li>Restaurações extensas</li><li>Reabilitação estética e funcional</li><li>Planejamento de casos complexos</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-cirurgia">
+            <span class="card-number">06</span><div class="line-icon" aria-hidden="true">🦷</div><h3>Cirurgia Oral</h3>
+            <div class="service-details" id="tratamento-cirurgia" aria-hidden="true"><ul><li>Extrações dentárias</li><li>Extração de sisos</li><li>Pequenas cirurgias</li><li>Implantes dentários</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-ortodontia">
+            <span class="card-number">07</span><div class="line-icon" aria-hidden="true">😬</div><h3>Ortodontia</h3>
+            <div class="service-details" id="tratamento-ortodontia" aria-hidden="true"><ul><li>Avaliação ortodôntica</li><li>Aparelhos ortodônticos</li><li>Alinhadores</li><li>Contenção</li><li>Acompanhamento ortodôntico</li></ul></div>
+          </article>
+          <article class="service-card reveal" tabindex="0" role="button" aria-expanded="false" aria-controls="tratamento-odontopediatria">
+            <span class="card-number">08</span><div class="line-icon" aria-hidden="true">👧</div><h3>Odontopediatria</h3>
+            <div class="service-details" id="tratamento-odontopediatria" aria-hidden="true"><ul><li>Primeira consulta</li><li>Prevenção e acompanhamento</li><li>Limpeza infantil</li><li>Aplicação de flúor</li><li>Selantes</li><li>Restaurações</li><li>Orientação aos pais</li></ul></div>
+          </article>
         </div>
-        <p class="services-note reveal">Para saber se um procedimento específico é oferecido, fale diretamente com o consultório.</p>
+        <p class="services-note reveal">A indicação de cada tratamento depende de avaliação profissional individual.</p>
       </div>
     </section>
 
